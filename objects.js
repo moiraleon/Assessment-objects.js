@@ -14,8 +14,15 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-//CODE HERE
+const me = {
+  firstName: 'Moira',
+  state: 'Utah',
+  age: 24,
 
+for (let attribute in me){
+console.log(`Hello my name is ${firstName} and I live in ${state}`)
+
+}
 
 
 
@@ -44,4 +51,11 @@
   }
 */
 
-//CODE HERE
+function carFactory(make,model,year){
+  if( year > 2018){
+    isNew = true
+  } else{
+    isNew = false
+  }
+} 
+carFactory('toyota', 'camry', 2020)
