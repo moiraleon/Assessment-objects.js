@@ -23,7 +23,17 @@ for (let attribute in me){
 console.log(`Hello my name is ${firstName} and I live in ${state}`)
 
 }
+//CLASS REVISION
 
+const me = {
+  firstName: 'Moira',
+  state: 'Utah',
+  age: 24,
+  greeter: function (){
+    return `Hello! My name is ${me.firstName} and I live in ${me.state}. `
+  }
+  }
+  me.greeter()
 
 
 
@@ -58,4 +68,36 @@ function carFactory(make,model,year){
     isNew = false
   }
 } 
+carFactory('toyota', 'camry', 2020)
+
+//CLASS REVISIONS
+function carFactory(make,model,year){
+  let car = {
+    make:'make',
+    model:'model',
+    year:year
+  } 
+  if( year > 2018){
+    car.isNew = true
+  } else{
+    car.isNew = false
+  }
+  return car
+}
+carFactory('toyota', 'camry', 2020)
+//REMOVING QUOTATION MARKS
+function carFactory(make,model,year){
+  let car = {
+    make:make,
+    model:model,
+    year:year
+  } 
+  if( year > 2018){
+    car.isNew = true
+  } else{
+    car.isNew = false
+  }
+  return car
+}
+
 carFactory('toyota', 'camry', 2020)
